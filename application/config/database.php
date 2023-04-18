@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost', 
-	'username' => 'tytyty',
-	'password' => 'Ohmygod11nsu',
-	'database' => 'shaibal2022_marudi', 
+	'hostname' => 'klinicx-db.mysql.database.azure.com', 
+	'username' => 'klinicx_superadmin',
+	'password' => '&SkaCpdGK6M,3sqJ',
+	'database' => 'klinicx_db', 
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
