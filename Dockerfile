@@ -6,7 +6,7 @@ RUN yum update -y
 # Copy Application files
 COPY . /var/www/html
 # Set environment variables for the MySQL Connection
-ENV MYSQL_HOST=klinicx-db.mysql.database.azure.com \
+ENV MYSQL_HOST=klinicx-db-flex.private.mysql.database.azure.com \
     MYSQL_DATABASE=klinicx_db \
     MYSQL_USER=klinicx_superadmin \
     MYSQL_PASSWORD=&SkaCpdGK6M,3sqJ
