@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:5.6-apache
 # Install Dependencies
 RUN docker-php-ext-install pdo_mysql
 RUN apt-get update && \
