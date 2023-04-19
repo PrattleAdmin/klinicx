@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.3-apache
 # Install Dependencies
 RUN docker-php-ext-install pdo_mysql
 RUN apt-get update && \
@@ -16,10 +16,10 @@ RUN service apache2 restart
 # Copy Application files
 COPY . /var/www/html
 # Set environment variables for the MySQL Connection
-ENV MYSQL_HOST=klinicx-db-flex.mysql.database.azure.com \
+ENV MYSQL_HOST=klinicx.mysql.database.azure.com \
     MYSQL_DATABASE=klinicx_db \
-    MYSQL_USER=klinicx_superadmin \
-    MYSQL_PASSWORD=&SkaCpdGK6M,3sqJ
+    MYSQL_USER=klinicx_admin \
+    MYSQL_PASSWORD=wer324fsdf$$32343xx
 WORKDIR /var/www/html
 #Expose Port for serviing site
 EXPOSE 443
