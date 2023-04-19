@@ -1,6 +1,6 @@
 <?php
 ini_set("date.timezone","Asia/Dhaka");
-setlocale("LC_TIME", "fr_FR"); 
+setlocale(LC_TIME, "fr_FR"); 
 /**
  * CodeIgniter
  *
