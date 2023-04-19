@@ -9,7 +9,7 @@ RUN apt-get install -y libicu-dev
 RUN apt-get update
 RUN docker-php-ext-install intl
 RUN docker-php-ext-configure intl
-RUN docker-php-ext-install mysqli pdo pdo_mysql zip mbstring
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
 RUN service apache2 restart
 # RUN composer require some-codeigniter-plugin
