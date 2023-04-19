@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'klinicx_admin',
 	'password' => 'wer324fsdf$$32343xx',
 	'database' => 'klinicx_db', 
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
