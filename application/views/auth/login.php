@@ -63,12 +63,12 @@ $title = explode(' ', $settings->title);
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="<?php echo base_url('common/login/css/bootstrap.min.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('common/login/css/vendors.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('common/login/css/style.css'); ?>" rel="stylesheet">
+    <link href="common/login/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/login/css/vendors.css" rel="stylesheet">
+    <link href="common/login/css/style.css" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="<?php echo base_url('common/login/css/custom.css'); ?>" rel="stylesheet">
+    <link href="common/login/css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -156,8 +156,8 @@ $title = explode(' ', $settings->title);
 	<!-- /container -->
 	
 	<!-- COMMON SCRIPTS -->
-    <script src="<?php echo base_url('common/login/js/common_scripts.js'); ?>"></script>
-	<script src="<?php echo base_url('common/login/js/common_func.js'); ?>"></script>
+    <script src="common/login/js/common_scripts.js"></script>
+	<script src="common/login/js/common_func.js"></script>
 
 </body>
 </html>
