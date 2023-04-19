@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'klinicx-db.mysql.database.azure.com', 
+	'hostname' => 'klinicx-db-flex.private.mysql.database.azure.com', 
 	'username' => 'klinicx_superadmin',
 	'password' => '&SkaCpdGK6M,3sqJ',
 	'database' => 'klinicx_db', 

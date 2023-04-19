@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "klinicx-db-flex.mysql.database.azure.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Klinicx-AzureDB",
+            "database": "klinicx_db",
+            "username": "klinicx_superadmin",
+            "askForPassword": true
+        }
+    ]
+}
