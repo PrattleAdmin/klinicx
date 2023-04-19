@@ -20,6 +20,7 @@ ENV MYSQL_HOST=klinicx-db-flex.mysql.database.azure.com \
     MYSQL_DATABASE=klinicx_db \
     MYSQL_USER=klinicx_superadmin \
     MYSQL_PASSWORD=&SkaCpdGK6M,3sqJ
+WORKDIR /var/www/html
 #Expose Port for serviing site
 EXPOSE 443
 # EXPOSE 80
