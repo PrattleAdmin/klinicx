@@ -1,6 +1,6 @@
 <?php
-ini_set("date.timezone","Asia/Dhaka");
-setlocale(LC_TIME, "fr_FR"); 
+ini_set('date.timezone', 'America/New_York');
+setlocale(LC_ALL, 'en_US.UTF-8');
 /**
  * CodeIgniter
  *

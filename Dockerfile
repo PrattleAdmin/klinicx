@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.3-apache
 # Install Dependencies
 RUN docker-php-ext-install pdo_mysql
 RUN apt-get update && \
@@ -20,8 +20,9 @@ ENV MYSQL_HOST=klinicx-db-flex.mysql.database.azure.com \
     MYSQL_DATABASE=klinicx_db \
     MYSQL_USER=klinicx_superadmin \
     MYSQL_PASSWORD=&SkaCpdGK6M,3sqJ
+WORKDIR /var/www/html
 #Expose Port for serviing site
 EXPOSE 443
-# EXPOSE 80
+EXPOSE 80
 # Start Apache with the CMD
 CMD ["apache2-foreground"]
