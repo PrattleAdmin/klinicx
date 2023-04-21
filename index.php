@@ -1,6 +1,6 @@
 <?php
-ini_set("date.timezone","Asia/Dhaka");
-setlocale("LC_TIME", "fr_FR"); 
+ini_set('date.timezone', 'America/New_York');
+setlocale(LC_ALL, 'en_US.UTF-8');
 /**
  * CodeIgniter
  *
@@ -55,7 +55,7 @@ setlocale("LC_TIME", "fr_FR");
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');       
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');       
 
 /*
  *---------------------------------------------------------------
