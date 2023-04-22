@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/prattle/klinicx-dev:${{ github.sha }}
+        tags: prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/klinicx-dev:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'klinicx'
         slot-name: 'dev'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_8b0540dd950148dbb9f516652109fbe6 }}
-        images: 'prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/prattle/klinicx-dev:${{ github.sha }}'
+        images: 'prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/klinicx-dev:${{ github.sha }}'
