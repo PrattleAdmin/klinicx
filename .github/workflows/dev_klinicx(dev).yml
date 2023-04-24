@@ -1,12 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy container app to Azure Web App - klinicx
+name: Build and deploy container app to Azure Web App - klinicx(dev)
 
 on:
   push:
     branches:
-      - main
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -23,21 +23,21 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://prattle.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_dccd258303fd464591bebe29f0f25829 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_6285cd76948d4fe687131011e4d7b2e9 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_fd0cbba1e512456890c3e82707b5a7f4 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dccd258303fd464591bebe29f0f25829 }}/klinicx-app:${{ github.sha }}
+        tags: prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/klinicx-dev:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'dev'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -46,6 +46,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'klinicx'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_dc3cee0df67342bbbdb119fa6a296320 }}
-        images: 'prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dccd258303fd464591bebe29f0f25829 }}/klinicx-app:${{ github.sha }}'
+        slot-name: 'dev'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8b0540dd950148dbb9f516652109fbe6 }}
+        images: 'prattle.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a35308eece8b422dae1375c6f9758ba0 }}/klinicx-dev:${{ github.sha }}'
