@@ -17,8 +17,8 @@ RUN service apache2 restart
 COPY . /var/www/html
 # Set environment variables for the MySQL Connection
 ENV MYSQL_HOST=klinicx-db-flex.mysql.database.azure.com \
-    MYSQL_DATABASE=klinicx_db \
-    MYSQL_USER=klinicx_superadmin \
+    MYSQL_DATABASE=dev_klinicx_db \
+    MYSQL_USER=klinicx \
     MYSQL_PASSWORD=&SkaCpdGK6M,3sqJ
 WORKDIR /var/www/html
 #Expose Port for serviing site
