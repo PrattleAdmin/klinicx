@@ -7,8 +7,8 @@ $title = explode(' ', $settings->title);
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" type="image/x-icon" href="front/assets_new/images/favicon.png" />
-    <title><?php echo $settings->title; ?></title>
+     <link rel="shortcut icon"  type="image/x-icon" href="uploads/test-removebg-preview.png">
+    <title><?php echo 'Klinicx medicare solution'; ?></title>
     <link href="common/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="common/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="common/css/bootstrap-select-country.min.css"  type='text/css' media='all' >
