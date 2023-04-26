@@ -1448,7 +1448,7 @@
 
                                     </li>
                                     <script src="common/js/jquery.js"></script>
-                                    <!-- <script src="common/extranal/js/chat.js"></script> -->
+                                    <script src="common/extranal/js/chat.js"></script>
                             <?php
                                 }
                             }
